@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #1E2A3A;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.weather-container {
+  width: 360px;
+  background-color: #2C3E50;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 95vh;
+}
+
+/* Top Section: Toggle and Search Bar */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.unit-toggle {
+  font-size: 0.9em;
+  color: #fff;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #34495E;
+  padding: 3px;
+  border-radius: 10px;
+}
+
+.search-bar input {
+  border: none;
+  background: none;
+  color: white;
+  outline: none;
+  padding: 3px;
+  font-size: 0.7em;
+  width: 120px;
+}
+
+.search-bar button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+/* Main Header */
+.header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.header h1 {
+  font-size: 1.2em;
+}
+
+.header p {
+  font-size: 0.9em;
+  color: #84A4C6;
+}
+
+.temperature-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.actual-temp,
+.feels-like {
+  text-align: center;
+}
+
+.actual-temp h2,
+.feels-like h2 {
+  font-size: 2em;
+  margin-top: 5px;
+}
+
+.forecast-hours {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.hour-block {
+  text-align: center;
+}
+
+.hour-block img {
+  width: 25px;
+  margin-bottom: 3px;
+}
+
+/* 7 Day Forecast with horizontal bars */
+.forecast-list {
+  margin-bottom: 8px;
+}
+
+.forecast-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 0;
+  border-bottom: 1px solid #34495E;
+}
+
+.forecast-item .day {
+  flex: 1.5;
+  font-size: 0.9em;
+}
+
+.forecast-item .weather-icon {
+  flex: 1;
+  width: 20px;
+}
+
+.temp-bar {
+  display: flex;
+  align-items: center;
+  flex: 4;
+  margin: 0 5px;
+}
+
+.low-temp,
+.high-temp {
+  font-size: 0.9em;
+}
+
+.bar {
+  flex: 1;
+  height: 8px;
+  background-color: #34495E;
+  margin: 0 5px;
+  position: relative;
+}
+
+.fill {
+  height: 100%;
+  background-color: #84A4C6;
+}
+
+.forecast-item .chance {
+  flex: 1.5;
+  text-align: right;
+  font-size: 0.9em;
+}
+
+/* Expand Option */
+.expand {
+  text-align: center;
+  margin: 5px 0;
+  font-size: 1em;
+  color: #84A4C6;
+}
+
+/* Additional Info Section */
+.additional-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-block {
+  background-color: #34495E;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  width: 75px;
+}
+
+
